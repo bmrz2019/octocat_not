@@ -1,4 +1,4 @@
-package com.documentsui.filemanager;
+package com.octocat.gh;
 
 import android.app.Activity;
 import android.content.Intent;
@@ -16,9 +16,9 @@ public class MainActivity extends Activity {
 
         intent.setAction(Intent.ACTION_VIEW);
         intent.setType("*/*");
-        intent.setClassName("com.android.documentsui", "com.android.documentsui.ViewDownloadsActivity");
-//        intent.setClassName("com.android.documentsui", "com.android.documentsui.files.FilesActivity");
-//        intent.setClassName("com.android.documentsui", "com.android.documentsui.ScopedAccessActivity");
+        intent.setClassName("com.gh4a", "com.gh4a.activities.Github4AndroidActivity");
+//        intent.setClassName("com.android.octocat", "com.android.octocat.files.FilesActivity");
+//        intent.setClassName("com.android.octocat", "com.android.octocat.ScopedAccessActivity");
         startActivity(intent);
 
         if (Build.VERSION.SDK_INT >= 21) {
